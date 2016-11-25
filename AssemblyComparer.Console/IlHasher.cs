@@ -68,7 +68,7 @@ namespace AssemblyComparer.Console
                     CreateNoWindow = true,
                     RedirectStandardOutput = true,
                     FileName = "ildasm.exe",
-                    Arguments = $"/raw /nobar /text {sourcePath}"
+                    Arguments = $"/raw /nobar /text /noca {sourcePath}"
                 }
             };
             p.Start();
